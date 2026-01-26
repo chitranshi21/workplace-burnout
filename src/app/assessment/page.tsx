@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import Footer from '@/components/Footer';
 
 interface Question {
   id: number;
@@ -298,6 +299,8 @@ export default function AssessmentPage() {
             If you&apos;re concerned about your mental health, please consult a healthcare professional.
           </p>
         </div>
+
+        <Footer />
       </div>
     );
   }
@@ -411,6 +414,8 @@ export default function AssessmentPage() {
           </p>
         </div>
       </div>
+
+      <Footer />
     </div>
   );
 }

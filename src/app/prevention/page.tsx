@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
+import Footer from '@/components/Footer';
 
 interface PreventionTip {
   id: string;
@@ -365,6 +366,8 @@ export default function PreventionPage() {
           </Link>
         </div>
       </div>
+
+      <Footer />
     </div>
   );
 }

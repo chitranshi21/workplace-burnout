@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import WorldMap from '@/components/WorldMap';
+import Footer from '@/components/Footer';
 
 export default function Home() {
   return (
@@ -206,35 +207,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="py-8 bg-sage-900">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <div className="flex items-center gap-2">
-              <div className="w-8 h-8 rounded-full bg-sage-700 flex items-center justify-center">
-                <svg className="w-5 h-5 text-sage-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
-                </svg>
-              </div>
-              <span className="text-sage-300 font-medium">Rekindle</span>
-            </div>
-            <div className="flex items-center gap-6">
-              <a
-                href="https://pauloviawe.nl/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-sage-400 hover:text-sage-200 transition-colors text-sm"
-              >
-                By Paul Oviawe
-              </a>
-              <span className="text-sage-600">|</span>
-              <span className="text-sage-400 text-sm">
-                Stress and Anxiety Relief
-              </span>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }

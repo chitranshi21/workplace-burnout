@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import Footer from '@/components/Footer';
 
 const familiarTales = [
   "I'll just stay home for a few weeks",
@@ -463,6 +464,8 @@ export default function IdentificationPage() {
           </Link>
         </div>
       </div>
+
+      <Footer />
     </div>
   );
 }

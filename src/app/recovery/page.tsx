@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
+import Footer from '@/components/Footer';
 
 interface RecoveryStep {
   number: number;
@@ -511,6 +512,8 @@ export default function RecoveryPage() {
           </Link>
         </div>
       </div>
+
+      <Footer />
     </div>
   );
 }
