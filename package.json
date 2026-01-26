@@ -1,6 +1,6 @@
 {
-  "name": "workplace-burnout-temp",
-  "version": "0.1.0",
+  "name": "rekindle-burnout-guide",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",

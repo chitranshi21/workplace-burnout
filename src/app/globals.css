@@ -1,26 +1,104 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f8faf8;
+  --foreground: #1a2e1a;
+  --sage-50: #f6f9f6;
+  --sage-100: #e8f0e8;
+  --sage-200: #d4e4d4;
+  --sage-300: #b3d1b3;
+  --sage-400: #8bb88b;
+  --sage-500: #6a9f6a;
+  --sage-600: #548154;
+  --sage-700: #456845;
+  --sage-800: #3a533a;
+  --sage-900: #314531;
+  --sage-950: #182518;
+  --warm-cream: #faf9f6;
+  --warm-beige: #f5f2eb;
+  --terracotta: #c4a484;
+  --forest: #2d5a2d;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-sage-50: var(--sage-50);
+  --color-sage-100: var(--sage-100);
+  --color-sage-200: var(--sage-200);
+  --color-sage-300: var(--sage-300);
+  --color-sage-400: var(--sage-400);
+  --color-sage-500: var(--sage-500);
+  --color-sage-600: var(--sage-600);
+  --color-sage-700: var(--sage-700);
+  --color-sage-800: var(--sage-800);
+  --color-sage-900: var(--sage-900);
+  --color-warm-cream: var(--warm-cream);
+  --color-warm-beige: var(--warm-beige);
+  --color-forest: var(--forest);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.gradient-sage {
+  background: linear-gradient(135deg, var(--sage-100) 0%, var(--sage-200) 100%);
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes pulse-soft {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-pulse-soft {
+  animation: pulse-soft 3s ease-in-out infinite;
+}
+
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px -8px rgba(106, 159, 106, 0.2);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--sage-100);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--sage-400);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--sage-500);
 }
