@@ -87,7 +87,7 @@ export default function Home() {
             {/* Author Attribution */}
             <div className="inline-flex items-center gap-3 px-5 py-3 bg-white rounded-2xl shadow-sm border border-sage-100">
               <div className="text-left">
-                <p className="text-sm font-medium text-sage-800">Paul Oviawe</p>
+                <p className="text-sm font-medium text-sage-600">Author</p>
                 <a
                   href="https://pauloviawe.nl/"
                   target="_blank"
@@ -107,7 +107,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-2xl sm:text-3xl font-bold text-sage-900 mb-4">
-              Your Journey to Balance
+              Your Journey to Work-Life Balance
             </h2>
             <p className="text-sage-600 max-w-2xl mx-auto">
               Workplace burnout is a syndrome resulting from chronic workplace
@@ -279,12 +279,12 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8">
             <h2 className="text-2xl sm:text-3xl font-bold text-sage-900 mb-4">
-              Global Burnout Risk Map
+              Global Work-Life Balance Map
             </h2>
             <p className="text-sage-600 max-w-2xl mx-auto">
-              Workplace burnout risk varies significantly across regions based
-              on work culture, regulations, and societal norms. Western Europe
-              leads with strong work-life balance policies.
+              Work-life balance sensitivity varies across regions. Western &amp;
+              Central Europe, Canada, and Japan prioritize balance and avoid
+              burnout. Other regions face greater work-life imbalances.
             </p>
           </div>
           <div className="max-w-4xl mx-auto">
