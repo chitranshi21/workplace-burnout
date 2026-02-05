@@ -10,6 +10,7 @@ const navItems = [
   { href: "/prevention", label: "Prevention" },
   { href: "/recovery", label: "Recovery" },
   { href: "/assessment", label: "Self-Test" },
+  { href: "/business", label: "For Business" },
 ];
 
 export default function Navigation() {
