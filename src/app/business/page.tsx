@@ -1,7 +1,5 @@
-import Link from "next/link";
-import PlanCard from "@/components/business/PlanCard";
 import Footer from "@/components/Footer";
-import { mockPlans } from "@/data/mockPlans";
+import ContactForm from "@/components/business/ContactForm";
 
 export default function BusinessPage() {
   return (
@@ -42,8 +40,8 @@ export default function BusinessPage() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                href="/business/demo"
+              <a
+                href="#contact"
                 className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-emerald-600 text-white rounded-xl font-medium hover:bg-emerald-700 transition-colors shadow-lg shadow-emerald-200"
               >
                 <svg
@@ -56,29 +54,10 @@ export default function BusinessPage() {
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth={2}
-                    d="M13 10V3L4 14h7v7l9-11h-7z"
+                    d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
                   />
                 </svg>
-                Start Demo
-              </Link>
-              <a
-                href="#pricing"
-                className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-white text-sage-700 rounded-xl font-medium hover:bg-sage-50 transition-colors border border-sage-200"
-              >
-                View Pricing
-                <svg
-                  className="w-4 h-4"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M19 9l-7 7-7-7"
-                  />
-                </svg>
+                Let&apos;s Talk
               </a>
             </div>
           </div>
@@ -121,135 +100,107 @@ export default function BusinessPage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-white rounded-2xl p-6 border border-sage-100">
               <div className="w-12 h-12 rounded-xl bg-emerald-100 flex items-center justify-center mb-4">
-                <svg
-                  className="w-6 h-6 text-emerald-600"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-9a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z"
-                  />
+                <svg className="w-6 h-6 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-9a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z" />
                 </svg>
               </div>
               <h3 className="text-lg font-semibold text-sage-800 mb-2">
-                Licensed Professionals
+                Licensed Professional Psychologists
               </h3>
               <p className="text-sage-600 text-sm">
-                Access to vetted psychologists specializing in workplace stress,
-                burnout, and career-related challenges.
+                Access to licensed professional psychologists experienced in burnout and workplace stress, providing evidence-based therapeutic support tailored to your organization&apos;s needs.
               </p>
             </div>
 
             <div className="bg-white rounded-2xl p-6 border border-sage-100">
               <div className="w-12 h-12 rounded-xl bg-emerald-100 flex items-center justify-center mb-4">
-                <svg
-                  className="w-6 h-6 text-emerald-600"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
-                  />
+                <svg className="w-6 h-6 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
                 </svg>
               </div>
               <h3 className="text-lg font-semibold text-sage-800 mb-2">
-                Complete Privacy
+                Step-by-Step Guidance
               </h3>
               <p className="text-sage-600 text-sm">
-                Employee sessions are 100% confidential. HR only sees aggregate
-                usage data, never individual details.
+                A structured approach covering Identification, Prevention, Recovery, and Post-Recovery Support to address burnout at every stage of the employee journey.
               </p>
             </div>
 
             <div className="bg-white rounded-2xl p-6 border border-sage-100">
               <div className="w-12 h-12 rounded-xl bg-emerald-100 flex items-center justify-center mb-4">
-                <svg
-                  className="w-6 h-6 text-emerald-600"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
-                  />
+                <svg className="w-6 h-6 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                 </svg>
               </div>
               <h3 className="text-lg font-semibold text-sage-800 mb-2">
-                Analytics Dashboard
+                First Aid Intervention
               </h3>
               <p className="text-sage-600 text-sm">
-                Track program engagement and ROI with detailed analytics while
-                maintaining employee privacy.
+                Psychological First Aid (PFA) for your workplace &mdash; an evidence-based approach to support employees during and after distressing events. Trained responders help stabilize affected team members, reduce acute stress, and connect them to ongoing professional care before issues escalate into chronic burnout.
+              </p>
+            </div>
+
+            <div className="bg-white rounded-2xl p-6 border border-sage-100">
+              <div className="w-12 h-12 rounded-xl bg-emerald-100 flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+              </div>
+              <h3 className="text-lg font-semibold text-sage-800 mb-2">
+                Year-End Report
+              </h3>
+              <p className="text-sage-600 text-sm">
+                Comprehensive annual report covering workplace stress statistics, employee satisfaction scores, burnout risk indicators, program engagement rates, absenteeism trends, and return-on-investment metrics &mdash; giving leadership actionable insights into workforce wellbeing.
+              </p>
+            </div>
+
+            <div className="bg-white rounded-2xl p-6 border border-sage-100">
+              <div className="w-12 h-12 rounded-xl bg-emerald-100 flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+                </svg>
+              </div>
+              <h3 className="text-lg font-semibold text-sage-800 mb-2">
+                Specialized Company Assessments
+              </h3>
+              <p className="text-sage-600 text-sm">
+                Custom assessments tailored to your organization&apos;s unique challenges, identifying department-specific stressors, cultural factors, and structural issues that contribute to employee burnout.
+              </p>
+            </div>
+
+            <div className="bg-white rounded-2xl p-6 border border-sage-100">
+              <div className="w-12 h-12 rounded-xl bg-emerald-100 flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h3 className="text-lg font-semibold text-sage-800 mb-2">
+                50% Discount on Therapy
+              </h3>
+              <p className="text-sage-600 text-sm">
+                Employees enrolled through Rekindle receive a 50% discount on individual therapy sessions, making professional mental health support accessible and affordable for your entire team.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Pricing Section */}
-      <section id="pricing" className="py-16 bg-white">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* Contact Form Section */}
+      <section id="contact" className="py-16 bg-white">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-sage-900 mb-4">
-              Simple, Transparent Pricing
+              Let&apos;s Talk
             </h2>
             <p className="text-sage-600 max-w-2xl mx-auto">
-              Every employee gets 5 sessions per month. Choose the plan that fits
-              your team size.
+              Tell us about your organization and we&apos;ll get back to you with a tailored plan for your team&apos;s wellbeing.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            {mockPlans.map((plan) => (
-              <PlanCard key={plan.id} plan={plan} />
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-br from-emerald-600 to-sage-700">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4">
-            Ready to Support Your Team?
-          </h2>
-          <p className="text-emerald-100 mb-8 max-w-xl mx-auto">
-            Start your free demo today and see how Rekindle can transform your
-            workplace wellness program.
-          </p>
-          <Link
-            href="/business/demo"
-            className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-white text-emerald-700 rounded-xl font-medium hover:bg-emerald-50 transition-colors"
-          >
-            Start Free Demo
-            <svg
-              className="w-4 h-4"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M17 8l4 4m0 0l-4 4m4-4H3"
-              />
-            </svg>
-          </Link>
+          <ContactForm />
         </div>
       </section>
 
