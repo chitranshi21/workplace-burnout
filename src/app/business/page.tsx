@@ -35,8 +35,7 @@ export default function BusinessPage() {
               <span className="text-emerald-600"> Mental Wellness</span>
             </h1>
             <p className="text-xl text-sage-600 mb-8 max-w-2xl mx-auto">
-              Give your employees access to professional mental health support.
-              Reduce burnout, increase productivity, and build a healthier workplace.
+              REKINDLE is a Benelux-based corporate mental health platform that connects your employees with a dedicated network of over 100 certified psychologists, counsellors, and coaches for personalised one-on-one therapy — purpose-built for small businesses across Belgium, the Netherlands, and Luxembourg.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
